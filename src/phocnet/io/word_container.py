@@ -53,9 +53,9 @@ class SimpleWordContainer(object):
     def get_word_image(self, gray_scale=True):
         col_type = None
         if gray_scale:
-            col_type = cv2.CV_LOAD_IMAGE_GRAYSCALE
+            col_type = cv2.IMREAD_GRAYSCALE
         else:
-            col_type = cv2.CV_LOAD_IMAGE_COLOR
+            col_type = cv2.IMREAD_COLOR
         
         # load the image
         ul = self.bounding_box['upperLeft']
